@@ -12,7 +12,7 @@ namespace DataAccess.Concrete.EntityFramework
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=.\;Database=T110ApiDB;Trusted_Connection=true;MultipleActiveResultSets=true");
+            optionsBuilder.UseSqlServer(@"Server=.\;Database=T110ApiDB3;Trusted_Connection=true;MultipleActiveResultSets=true");
         }
 
         public DbSet<Product> Products { get;set; }
